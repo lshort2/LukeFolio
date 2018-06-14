@@ -107,8 +107,22 @@ body {
   height: 100%;
   list-style-type: none;
   margin: 0;
-  min-width: 72px;
+  /* min-width: 72px; */
   position: fixed;
   right: 0;
   top: 0;
+  width: 72px;
+}
+
+.taskbar-icon {
+  margin: .75rem;
+  max-width: 100%;
+}
+
+.taskbar-icon:hover {
+  transform: translateY(-2px);
+}
+
+.taskbar-icon img {
+  max-width: 100%;
 }
