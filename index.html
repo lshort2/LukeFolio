@@ -12,10 +12,12 @@
   <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/normalize.css">
   <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/main.css">
   <link rel="stylesheet" href="bower_components/custombox/dist/custombox.min.css">
+  <link rel="stylesheet" href="bower_components/foundation-sites/dist/css/foundation.min.css">
   <link rel="stylesheet" href="tooltips.css">
-
   <link rel="stylesheet" href="fontawesome/fa-svg-with-js.css">
   <link rel="stylesheet" href="app.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+
   <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
   <script src="bower_components/jquery/dist/jquery.min.js"></script>
   <script src="bower_components/custombox/dist/custombox.min.js"></script>
@@ -48,19 +50,14 @@
     <div class="taskbar-icon tooltip-left" data-tooltip="Contact"><a href="#!/contact"><img src="nav_components/img/contact-icon.png" alt="Contact"/></a></div>
     <div class="taskbar-icon tooltip-left" data-tooltip="GitHub"><a href="#!/github"><img src="nav_components/img/github-icon.png" alt="GitHub"/></a></div>
     <div class="taskbar-icon tooltip-left" data-tooltip="LinkedIn"><a href="#!/linkedin"><img src="nav_components/img/linkedin-icon.png" alt="LinkedIn"/></a></div>
-    <div class="taskbar-icon tooltip-left" data-tooltip="About this site"><a href="#!/about-site"><img src="nav_components/img/site-info-icon.png" alt="Info Icon (about site)"/></a></div>
+    <div class="taskbar-icon tooltip-left" data-tooltip="Site info"><a href="#!/about-site"><img src="nav_components/img/site-info-icon.png" alt="Info Icon (about site)"/></a></div>
     <div class="taskbar-icon tooltip-left" data-tooltip="About me"><a href="#!/about-me"><img src="nav_components/img/about-me.png" alt="About me"/></a></div>
   </nav>
-  <ul class="menu">
-    <li><a href="#!/view1">view1</a></li>
-    <li><a href="#!/view2">view2</a></li>
-  </ul>
-
   <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
   <![endif]-->
 
-  <div ng-view></div>
+  <div class="main-content" ng-view></div>
 
   <!--
     COMMENTED OUT from original seed app
