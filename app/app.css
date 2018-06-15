@@ -6,6 +6,7 @@ body {
   /* background-position: center; */
   background-position: top;
   background-size: cover;
+  color: #eee;
   font-size: 16px;
   margin: 0;
   min-height: 100%;
@@ -78,44 +79,21 @@ body {
   transition: .8s;
 }
 
-.menu {
-  list-style: none;
-  border-bottom: 0.1em solid black;
-  margin-bottom: 2em;
-  padding: 0 0 0.5em;
-}
-
-.menu:before {
-  content: "[";
-}
-
-.menu:after {
-  content: "]";
-}
-
-.menu > li {
-  display: inline;
-}
-
-.menu > li + li:before {
-  content: "|";
-  padding-right: 0.3em;
-}
-
 .taskbar {
   background:rgba(44,134,193,0.7);
   height: 100%;
   list-style-type: none;
   margin: 0;
-  /* min-width: 72px; */
   position: fixed;
   right: 0;
   top: 0;
   width: 72px;
+  z-index: 900;
 }
 
 .taskbar-icon {
-  border-radius: .25rem;
+  /* border-radius: .25rem; */
+  border-radius: .5rem;
   margin: .75rem;
   max-width: 100%;
 }
@@ -128,11 +106,26 @@ body {
 }
 
 .taskbar-icon:active {
+  border: 2px solid rgb(240, 220, 45);
   transform: translateY(-1px);
+}
+
+.taskbar-icon.active {
+  /* border: 2px solid rgba(22, 22, 22, .6); */
+  box-shadow: 1px 1px 1px 1px;
+  box-shadow: -2px 2px 3px 1px rgba(255, 255, 255, 0.2);
+  transform: scale(1.1);
 }
 
 .taskbar-icon img {
   max-width: 100%;
+}
+
+/*
+main content
+*/
+.main-content {
+  margin: 2rem 96px 2rem 1.5rem;
 }
 
 .memey-txt {
@@ -142,3 +135,117 @@ body {
 .memey-txt-hl {
   color: #e55216;
 }
+
+.memey-code {
+  color: rgba(107, 83, 175, 0.822);
+  background: none;
+  border: none;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+}
+
+/* Page titles */
+.page-title-wrapper {
+  color: rgb(240, 220, 45);
+  font-family: 'Roboto Mono', monospace;
+  font-size: 4rem;
+  height: 7rem;
+  margin-left: 2rem;
+  -webkit-transform: skew(-20deg);
+	-moz-transform: skew(-20deg);
+  -o-transform: skew(-20deg);
+  position: relative;
+  transform: skew(-20deg);
+}
+
+.page-title {
+  -webkit-animation: slidein .4s backwards;
+  animation: slidein .4s backwards;
+  -webkit-animation-delay: .1s;
+  animation-delay: .1s;
+  font-weight: bold;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  position: absolute;
+}
+
+@-webkit-keyframes slidein {
+  from {
+    margin-left: -100%;
+  }
+
+  to {
+    margin-left: 0%;
+  }
+}
+
+@keyframes slidein {
+  from {
+    margin-left: -100%;
+  }
+
+  to {
+    margin-left: 0%;
+  }
+}
+
+.testbest-title {
+  background-color: #a0aab2;
+  color: #1f81c9;
+}
+
+.dept-sci-ed-title {
+  background-color: #2d343b;
+  color: #8f113b;
+  font-size: 1.4rem;
+}
+
+.tbp-title {
+  background-color: #412419;
+  color: #fcc40a;
+}
+
+.contact-title {
+  background-color: #bb872e;
+  color: #000;
+}
+
+.github-title {
+  background-color: #c34642;
+  color: #000;
+}
+
+.linkedin-title {
+  background-color: #0e5ea0;
+  color: #fff;
+}
+
+.about-site-title {
+  background-color: #8376d6;
+  color: #dfdfdf;
+}
+
+.about-me-title {
+  background-color: #11191f;
+  color: #1ead72;
+}
+
+.bg-dark {
+  background-color: rgba(22, 22, 22, 0.6);
+}
+
+.bg-blue {
+  background:rgba(44,134,193,0.8);
+}
+
+.txt-light {
+  color: #eee;
+}
+
+/*
+  border classes
+*/
+
+/*
+/////////////////////////
+*/

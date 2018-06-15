@@ -149,3 +149,8 @@ $(document).ready(function() {
   yWingDist2 = -1 * 2100;
   bomb.css('right',  (-1 * yWingDist1) + 'px');
 });
+
+$('nav .taskbar-icon').on('click', function(event) {
+  $('nav div.active').removeClass('active');
+  $(this).addClass('active');
+});

@@ -14,6 +14,7 @@
     "custombox": "^4.0.3",
     "jquery": "^3.3.1",
     "popmotion": "^5.0.17",
-    "move-js": "^0.4.0"
+    "move-js": "^0.4.0",
+    "foundation-sites": "^6.4.3"
   }
 }
