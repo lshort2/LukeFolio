@@ -115,14 +115,30 @@ body {
 }
 
 .taskbar-icon {
+  border-radius: .25rem;
   margin: .75rem;
   max-width: 100%;
 }
 
 .taskbar-icon:hover {
   transform: translateY(-2px);
+  -webkit-box-shadow:         1px 1px 9px 3px rgba(19, 19, 19, .4);
+  -moz-box-shadow:         1px 1px 9px 3px rgba(19, 19, 19, .4);
+  box-shadow:         1px 1px 9px 3px rgba(19, 19, 19, .4);
+}
+
+.taskbar-icon:active {
+  transform: translateY(-1px);
 }
 
 .taskbar-icon img {
   max-width: 100%;
+}
+
+.memey-txt {
+  color: #eee;
+  font-size: 4rem;
+}
+.memey-txt-hl {
+  color: #e55216;
 }

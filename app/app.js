@@ -9,12 +9,21 @@ angular.module('myApp', [
   'ngRoute',
   'myApp.view1',
   'myApp.view2',
+  'myApp.about_me',
+  'myApp.about_site',
+  'myApp.contact',
+  'myApp.dept_sci_ed',
+  'myApp.github',
+  'myApp.home',
+  'myApp.linkedin',
+  'myApp.tbp',
+  'myApp.testbest',
   'myApp.version'
 ]).
 config(['$locationProvider', '$routeProvider', function($locationProvider, $routeProvider) {
   $locationProvider.hashPrefix('!');
 
-  $routeProvider.otherwise({redirectTo: '/view1'});
+  $routeProvider.otherwise({redirectTo: '/home'});
 }]);
 
 //===================================================================
