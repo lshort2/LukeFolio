@@ -12,6 +12,8 @@
   <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/normalize.css">
   <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/main.css">
   <link rel="stylesheet" href="bower_components/custombox/dist/custombox.min.css">
+  <link rel="stylesheet" href="tooltips.css">
+
   <link rel="stylesheet" href="fontawesome/fa-svg-with-js.css">
   <link rel="stylesheet" href="app.css">
   <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
@@ -20,21 +22,34 @@
   <script src="bower_components/custombox/dist/custombox.legacy.min.js"></script>
   <script defer src="bower_components/move-js/move.min.js"></script>
 
+
+
+  <!--
+  <link rel="stylesheet" href="bower_components/foundation-sites/dist/css/foundation.min.css">
+  <script defer src="bower_components/foundation-sites/dist/js/plugins/foundation.core.min.js"></script>
+  <script defer src="bower_components/foundation-sites/dist/js/plugins/foundation.util.box.min.js"></script>
+  <script defer src="bower_components/foundation-sites/dist/js/plugins/foundation.util.mediaQuery.min.js"></script>
+  <script defer src="bower_components/foundation-sites/dist/js/plugins/foundation.util.triggers.min.js"></script>
+  <script defer src="bower_components/foundation-sites/dist/js/plugins/foundation.tooltip.min.js"></script>
+
+
+  -->
+
   <script defer src="fontawesome/fontawesome.min.js"></script>
   <script defer src="fontawesome/fa-solid.min.js"></script>
 </head>
 <body>
   <nav class="taskbar" role="navigation">
-    <div class="taskbar-icon"><a href="#!/view1">view1</a></div>
-    <div class="taskbar-icon"><a href="#!/view2">view2</a></div>
-    <div class="taskbar-icon"><a href="#!/testbest"><img src="nav_components/img/testbest-icon.png" alt="TestBest"/></a></div>
-    <div class="taskbar-icon"><a href="#!/dept-sci-ed"><img src="nav_components/img/dept-sci-ed-icon.png" alt="Dept Sci Ed"/></a></div>
-    <div class="taskbar-icon"><a href="#!/tbp"><img src="nav_components/img/tau-beta-pi-icon.png" alt="TBP"/></a></div>
-    <div class="taskbar-icon"><a href="#!/contact"><img src="nav_components/img/contact-icon.png" alt="Contact"/></a></div>
-    <div class="taskbar-icon"><a href="#!/github"><img src="nav_components/img/github-icon.png" alt="GitHub"/></a></div>
-    <div class="taskbar-icon"><a href="#!/linkedin"><img src="nav_components/img/linkedin-icon.png" alt="LinkedIn"/></a></div>
-    <div class="taskbar-icon"><a href="#!/about-site"><img src="nav_components/img/site-info-icon.png" alt="Info Icon (about site)"/></a></div>
-    <div class="taskbar-icon"><a href="#!/about-me"><img src="nav_components/img/about-me.png" alt="About me"/></a></div>
+    <div class="taskbar-icon tooltip-left" data-tooltip="I'm the tooltip text."><a href="#!/view1">view1</a></div>
+    <div class="taskbar-icon tooltip-left" data-tooltip="I'm the tooltip text."><a href="#!/view2">view2</a></div>
+    <div class="taskbar-icon tooltip-left" data-tooltip="TestBest"><a href="#!/testbest"><img src="nav_components/img/testbest-icon.png" alt="TestBest"/></a></div>
+    <div class="taskbar-icon tooltip-left" data-tooltip="Deptartment of Science Education"><a href="#!/dept-sci-ed"><img src="nav_components/img/dept-sci-ed-icon.png" alt="Dept Sci Ed"/></a></div>
+    <div class="taskbar-icon tooltip-left" data-tooltip="Tau Beta Pi"><a href="#!/tbp"><img src="nav_components/img/tau-beta-pi-icon.png" alt="TBP"/></a></div>
+    <div class="taskbar-icon tooltip-left" data-tooltip="Contact"><a href="#!/contact"><img src="nav_components/img/contact-icon.png" alt="Contact"/></a></div>
+    <div class="taskbar-icon tooltip-left" data-tooltip="GitHub"><a href="#!/github"><img src="nav_components/img/github-icon.png" alt="GitHub"/></a></div>
+    <div class="taskbar-icon tooltip-left" data-tooltip="LinkedIn"><a href="#!/linkedin"><img src="nav_components/img/linkedin-icon.png" alt="LinkedIn"/></a></div>
+    <div class="taskbar-icon tooltip-left" data-tooltip="About this site"><a href="#!/about-site"><img src="nav_components/img/site-info-icon.png" alt="Info Icon (about site)"/></a></div>
+    <div class="taskbar-icon tooltip-left" data-tooltip="About me"><a href="#!/about-me"><img src="nav_components/img/about-me.png" alt="About me"/></a></div>
   </nav>
   <ul class="menu">
     <li><a href="#!/view1">view1</a></li>
@@ -95,5 +110,8 @@
   <script src="components/version/version.js"></script>
   <script src="components/version/version-directive.js"></script>
   <script src="components/version/interpolate-filter.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.0.2/js/modernizr.js"></script>
+  <script src="bower_components/foundation-sites/dist/js/foundation.min.js"></script>
 </body>
 </html>
