@@ -2,14 +2,31 @@
 
 body {
   background-image: url(cool-space-bg.jpg);
-  /* background-color: grey; */
-  /* background-position: center; */
   background-position: top;
   background-size: cover;
   color: #eee;
   font-size: 16px;
   margin: 0;
   min-height: 100%;
+}
+
+.home-content {
+  opacity: 0;
+  -webkit-transition: visibility 0s, opacity 0.3s linear;
+  transition: visibility 0s, opacity 0.3s linear;
+  visibility: hidden;
+}
+
+.home-description {
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+.home-subheading {
+  border-bottom: 3px solid #2e86c1;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  margin-top: .75rem;
 }
 
 /* Welcome Modal */
@@ -92,7 +109,6 @@ body {
 }
 
 .taskbar-icon {
-  /* border-radius: .25rem; */
   border-radius: .5rem;
   margin: .75rem;
   max-width: 100%;
@@ -115,6 +131,11 @@ body {
   box-shadow: 1px 1px 1px 1px;
   box-shadow: -2px 2px 3px 1px rgba(255, 255, 255, 0.2);
   transform: scale(1.1);
+}
+
+.taskbar-icon a {
+  height: 100%;
+  width: 100%;
 }
 
 .taskbar-icon img {
@@ -249,3 +270,48 @@ main content
 /*
 /////////////////////////
 */
+
+/*
+arrow that points to navbar
+*/
+
+.moving-arrow {
+  -webkit-animation: keepsliding 1s; /* Safari 4.0 - 8.0 */
+  animation: keepsliding 1s;
+  -webkit-animation-direction: alternate; /* Safari 4.0 - 8.0 */
+  animation-direction: alternate;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  max-width: 200px;
+}
+
+@-webkit-keyframes keepsliding {
+  0%  {margin-left: 20px;}
+  100%   {margin-left: 0px;}
+}
+
+@keyframes keepsliding {
+  0%  {margin-left: 20px;}
+  100%   {margin-left: 0px;}
+}
+
+/*
+fade in transition
+*/
+
+.page-content {
+  -webkit-animation: fadein 1.5s; /* Safari, Chrome and Opera > 12.1 */
+  animation: fadein 1.5s;
+}
+
+@-webkit-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}

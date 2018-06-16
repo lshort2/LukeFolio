@@ -10,5 +10,5 @@ angular.module('myApp.github', ['ngRoute'])
 }])
 
 .controller('ViewGithubCtrl', [function() {
-
+  window.scrollTo(0, 0);
 }]);

@@ -43,7 +43,11 @@ function moveYWing() {
     $('#y_wing_bomb').css('display', 'none');
     $('#after_bomb').css('display', 'block');
     setTimeout(function(){$('#after_bomb').css('transform', 'scale(3)');}, 0);
-    setTimeout(function(){$('#after_bomb').css('display', 'none');}, 800);
+    setTimeout(function(){
+      $('#after_bomb').css('display', 'none');
+      $('.home-content').css('visibility', 'visible');
+      $('.home-content').css('opacity', '1');
+    }, 800);
   }
 
   let qux = function (){

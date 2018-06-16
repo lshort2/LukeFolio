@@ -10,5 +10,5 @@ angular.module('myApp.home', ['ngRoute'])
 }])
 
 .controller('ViewHomeCtrl', [function() {
-
+  window.scrollTo(0, 0);
 }]);
