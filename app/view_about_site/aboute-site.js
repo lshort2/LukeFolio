@@ -10,5 +10,5 @@ angular.module('myApp.about_site', ['ngRoute'])
 }])
 
 .controller('ViewAboutSiteCtrl', [function() {
-
+  window.scrollTo(0, 0);
 }]);

@@ -10,5 +10,5 @@ angular.module('myApp.contact', ['ngRoute'])
 }])
 
 .controller('ViewContactCtrl', [function() {
-
+  window.scrollTo(0, 0);
 }]);

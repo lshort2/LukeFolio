@@ -10,5 +10,5 @@ angular.module('myApp.linkedin', ['ngRoute'])
 }])
 
 .controller('ViewLinkedinCtrl', [function() {
-
+  window.scrollTo(0, 0);
 }]);

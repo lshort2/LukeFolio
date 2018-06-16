@@ -10,5 +10,5 @@ angular.module('myApp.tbp', ['ngRoute'])
 }])
 
 .controller('ViewTbpCtrl', [function() {
-
+  window.scrollTo(0, 0);
 }]);

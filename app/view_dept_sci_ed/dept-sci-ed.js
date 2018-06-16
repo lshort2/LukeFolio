@@ -10,5 +10,5 @@ angular.module('myApp.dept_sci_ed', ['ngRoute'])
 }])
 
 .controller('ViewDeptSciEdCtrl', [function() {
-
+  window.scrollTo(0, 0);
 }]);

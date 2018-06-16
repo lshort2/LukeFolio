@@ -10,5 +10,5 @@ angular.module('myApp.about_me', ['ngRoute'])
 }])
 
 .controller('ViewAboutMeCtrl', [function() {
-
+  window.scrollTo(0, 0);
 }]);

@@ -10,5 +10,5 @@ angular.module('myApp.testbest', ['ngRoute'])
 }])
 
 .controller('ViewTestbestCtrl', [function() {
-
+  window.scrollTo(0, 0);
 }]);
