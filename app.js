@@ -7,8 +7,6 @@
 // Declare app level module which depends on views, and components
 angular.module('myApp', [
   'ngRoute',
-  'myApp.view1',
-  'myApp.view2',
   'myApp.about_me',
   'myApp.about_site',
   'myApp.contact',
@@ -152,6 +150,11 @@ $(document).ready(function() {
   yWingDist1 = -1 * 600;
   yWingDist2 = -1 * 2100;
   bomb.css('right',  (-1 * yWingDist1) + 'px');
+  setTimeout(function(){
+    console.log('terrible terrible hack, use promises or callbacks');
+    $('.home-content').css('opacity', '0');
+    $('.home-content').css('visibility', 'hidden');
+  }, 10);
 });
 
 $('nav .taskbar-icon').on('click', function(event) {
