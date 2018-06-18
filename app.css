@@ -88,6 +88,11 @@ body {
   margin-top: 3rem;
 }
 
+.home-description {
+  margin-bottom: 4rem;
+  margin-top: 3rem;
+}
+
 /* Welcome Modal */
 .welcome-modal {
   background-color: #2e86c1;
@@ -131,7 +136,6 @@ body {
 .y-wing-bomber {
   max-width: 60%;
   position: absolute;
-  /* right: 350px; */
   right: -350px;
   top: 0;
   transition: 1.5s linear;
@@ -369,4 +373,10 @@ fade in transition
 .page-quote {
   color: #777;
   font-style: italic;
+}
+
+code {
+  background-color: #222;
+  border-color: #444;
+  color: #dd3b83;
 }
