@@ -1,12 +1,15 @@
 /* app css stylesheet */
+html,body {
+  margin: 0;
+  padding: 0;
+}
 
 body {
   background-image: url(cool-space-bg.jpg);
   background-position: top;
-  background-size: cover;
+  /* background-size: cover; */
   color: #eee;
   font-size: 16px;
-  margin: 0;
   min-height: 100%;
 }
 
@@ -44,11 +47,11 @@ body {
 
 .welcome-heading {
   font-size: 1.17rem;
-  margin-left: 1rem;
-  margin-right: 1rem;
+  margin: 1.25rem;
 }
 
 .welcome-description {
+  font-family: 'Gothic A1', sans-serif;
   margin: 1rem;
 }
 
@@ -114,6 +117,12 @@ body {
   border-radius: .5rem;
   margin: .75rem;
   max-width: 100%;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-user-drag: none;
+  user-drag: none;
 }
 
 .taskbar-icon:hover {
@@ -154,6 +163,8 @@ main content
 .memey-txt {
   color: #eee;
   font-size: 4rem;
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
   line-height: 3.5rem;
 }
 .memey-txt-hl {
@@ -177,7 +188,8 @@ main content
 /* Page titles */
 .page-title-wrapper {
   color: rgb(240, 220, 45);
-  font-family: 'Roboto Mono', monospace;
+  font-family: 'Roboto', sans-serif;
+
   font-size: 4rem;
   height: 7rem;
   margin-left: 2rem;
@@ -277,42 +289,12 @@ main content
 */
 
 /*
-/////////////////////////
-*/
-
-/*
-arrow that points to navbar
-*/
-
-.moving-arrow {
-  -webkit-animation: keepsliding 1s; /* Safari 4.0 - 8.0 */
-  animation: keepsliding 1s;
-  -webkit-animation-direction: alternate; /* Safari 4.0 - 8.0 */
-  animation-direction: alternate;
-  -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
-  -webkit-animation-iteration-count: infinite;
-  animation-iteration-count: infinite;
-  max-width: 200px;
-}
-
-@-webkit-keyframes keepsliding {
-  0%  {margin-left: 20px;}
-  100%   {margin-left: 0px;}
-}
-
-@keyframes keepsliding {
-  0%  {margin-left: 20px;}
-  100%   {margin-left: 0px;}
-}
-
-/*
 fade in transition
 */
 
 .page-content {
-  -webkit-animation: fadein 1.5s; /* Safari, Chrome and Opera > 12.1 */
-  animation: fadein 1.5s;
+  -webkit-animation: fadein 1.4s;
+  animation: fadein 1.4s;
 }
 
 @-webkit-keyframes fadein {
@@ -323,4 +305,9 @@ fade in transition
 @keyframes fadein {
   from { opacity: 0; }
   to   { opacity: 1; }
+}
+
+.page-quote {
+  color: #777;
+  font-style: italic;
 }

@@ -169,17 +169,17 @@ document.addEventListener('custombox:overlay:close', function() {
 });
 
 $(document).ready(function() {
-  let h = getHeight();
-  let w = getWidth();
+  let h = $(window).height(); // getHeight();
+  let w = $(window).width(); // getWidth();
   console.log('w: ', w);
   console.log('h: ', h);
   // bombDrop = 300; //27% - 30% height
-  let temp = h * .30;
+  let temp = h * .4;
   bombDrop = temp.toFixed(0);
   console.log('bombDrop: ', bombDrop);
   // yWingDist1 = -1 * 600; // 55% of width
-  temp = w * .4;
-  temp = temp.toFixed(0);
+  temp = w * .5;
+  temp = temp.toFixed(0) - 100;
   yWingDist1 = -1 * temp;
   console.log('yWingDist1: ', yWingDist1);
   // yWingDist2 = -1 * 2100; // 117% of width
