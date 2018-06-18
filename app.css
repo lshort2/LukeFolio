@@ -48,12 +48,24 @@ body {
   padding: .5rem;
 }
 
+.p-1rem {
+  padding: 1rem;
+}
+
 .m-1rem {
   margin: 1rem;
 }
 
 .m-2rem {
   margin: 2.5rem;
+}
+
+.vert-align-middle-cell {
+  float: left;
+  left: 50%;
+  position: relative;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .home-content {
@@ -211,6 +223,11 @@ main content
 }
 .memey-txt-hl {
   color: #e55216;
+}
+
+.spec-link {
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 
 .memey-code {
