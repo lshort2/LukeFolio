@@ -16,7 +16,7 @@
   <link rel="stylesheet" href="tooltips.css">
   <link rel="stylesheet" href="fontawesome/fa-svg-with-js.css">
   <link rel="stylesheet" href="app.css">
-  <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Gothic+A1|Roboto" rel="stylesheet">
 
   <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
   <script src="bower_components/jquery/dist/jquery.min.js"></script>
@@ -42,6 +42,14 @@
   <script defer src="fontawesome/fa-solid.min.js"></script>
 </head>
 <body>
+  <main class="wrapper">
+    <div class="parallax bg1">
+      <div style="position: absolute; top: 0; left: 0;">
+        <div class="main-content" ng-view></div>
+      </div>
+    </div>
+  </main>
+
   <nav class="taskbar" role="navigation">
     <div class="taskbar-icon tooltip-left" data-tooltip="TestBest"><a href="#!/testbest"><img src="nav_components/img/testbest-icon.png" alt="TestBest"/></a></div>
     <div class="taskbar-icon tooltip-left" data-tooltip="Deptartment of Science Education"><a href="#!/dept-sci-ed"><img src="nav_components/img/dept-sci-ed-icon.png" alt="Dept Sci Ed"/></a></div>
@@ -56,7 +64,9 @@
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
   <![endif]-->
 
-  <div class="main-content" ng-view></div>
+  <!--
+    <div class="main-content" ng-view></div>
+  -->
 
   <!--
     COMMENTED OUT from original seed app
@@ -68,10 +78,10 @@
     <a href="javascript:void(0);" onclick="Custombox.modal.close();" class="welcome-close"><i class="fas fa-times"></i></a>
     <h3 class="welcome-heading">Welcome to LukeFolio</h3>
     <div class="welcome-description">
-      This is a website I hacked together in my free time to serve as a way to showcase some of the more recent involvements in my life.
+      This is a website I hacked together in my free time to showcase some of the more recent involvements in my life.
     </div>
     <div class="welcome-description">
-      Also, I'll be honest... I wanted an excuse to gather some steamy memes from [MUST FIND API THAT SUPPORTS MEMES]'s API. ;)
+      Also, I'll be honest... I wanted an excuse to gather some gifs from GIPHY's API. ;)
     </div>
     <div class="welcome-description">
       Cheers!
