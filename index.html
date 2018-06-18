@@ -42,13 +42,27 @@
   <script defer src="fontawesome/fa-solid.min.js"></script>
 </head>
 <body>
-  <main class="wrapper">
-    <div class="parallax bg1">
-      <div style="position: absolute; top: 0; left: 0;">
-        <div class="main-content" ng-view></div>
+  <div class="background-element">
+    <div class="parallax">
+      <div class="parallax__group">
+        <div class="parallax__layer parallax__layer--back">
+          haha this is base
+        </div>
+        <div class="parallax__layer parallax__layer--base">
+          <div class="main-content" ng-view></div>
+        </div>
       </div>
+      <!--
+      <div class="parallax__group">
+        <div class="parallax__layer parallax__layer--base">
+          another base
+        </div>
+        <div class="parallax__layer parallax__layer--base">
+        </div>
+      </div>
+      -->
     </div>
-  </main>
+  </div>
 
   <nav class="taskbar" role="navigation">
     <div class="taskbar-icon tooltip-left" data-tooltip="TestBest"><a href="#!/testbest"><img src="nav_components/img/testbest-icon.png" alt="TestBest"/></a></div>

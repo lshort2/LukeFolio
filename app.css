@@ -1,20 +1,59 @@
 /* app css stylesheet */
+
+.parallax {
+  perspective: 1px;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.parallax__layer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.parallax__layer--base {
+  transform: translateZ(0);
+}
+.parallax__layer--back {
+  background-color: #030303;
+  background-image: url(assets/img/background_images/cool-space-bg.jpg);
+  background-size: cover;
+  height: 120vh;
+  /* background-image: url(assets/img/background_images/darkness.png); */
+  /* transform: translateZ(-1px) scale(2); */
+  transform: translateZ(-4px) scale(5);
+}
+
+
 html,body {
   margin: 0;
   padding: 0;
 }
 
 body {
-  background-image: url(cool-space-bg.jpg);
+  background-image: url(assets/img/background_images/cool-space-bg-sliver.jpg);
+  /* background-image: url(assets/img/background_images/darkness.png); */
+  /* background-color: #030303; */
   background-position: top;
   /* background-size: cover; */
   color: #eee;
   font-size: 16px;
   min-height: 100%;
+  transform: translate(-1);
+}
+
+.p--5rem {
+  padding: .5rem;
 }
 
 .m-1rem {
   margin: 1rem;
+}
+
+.m-2rem {
+  margin: 2.5rem;
 }
 
 .home-content {
@@ -29,6 +68,9 @@ body {
 
 .home-subheading {
   border-bottom: 3px solid #2e86c1;
+  -webkit-box-shadow: 2px 2px 3px 1px rgba(255, 255, 255, 0.1);
+  -moz-box-shadow: 2px 2px 3px 1px rgba(255, 255, 255, 0.1);
+  box-shadow: 2px 2px 3px 1px rgba(255, 255, 255, 0.1);
   font-size: 1.5rem;
   margin-bottom: .5rem;
   margin-top: 3rem;
@@ -133,7 +175,7 @@ body {
 }
 
 .taskbar-icon:active {
-  border: 2px solid rgb(240, 220, 45);
+  border: 1px solid rgb(240, 220, 45);
   transform: translateY(-1px);
 }
 
@@ -273,7 +315,7 @@ main content
 }
 
 .bg-dark {
-  background-color: rgba(22, 22, 22, 0.6);
+  background-color: rgba(22, 22, 22, 0.75);
 }
 
 .bg-blue {
