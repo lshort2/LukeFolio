@@ -2,7 +2,7 @@
  * Scoping hack to avoid multiple declaration error
  * when using back/forward buttons of browser
  */
-if(true) {
+if(false) {
   let apiHost = 'https://api.giphy.com';
   let endpoint = '/v1/gifs/random';
   let apiKeyQuery = '?api_key=yxOgJBtY9aYW8CTeJB5P2s8YhL3H4yvu';
