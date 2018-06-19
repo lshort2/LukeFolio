@@ -10,5 +10,8 @@ angular.module('myApp.github', ['ngRoute'])
 }])
 
 .controller('ViewGithubCtrl', [function() {
-  window.scrollTo(0, 0);
+  // window.scrollTo(0, 0);
+  $(".parallax").animate({
+    scrollTop: $(document).height()
+  }, 200);
 }]);

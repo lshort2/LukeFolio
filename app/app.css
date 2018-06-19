@@ -106,6 +106,10 @@ body {
   margin-top: 3rem;
 }
 
+.special-thanks-description {
+  font-size: 1.125rem;
+}
+
 /* Welcome Modal */
 .welcome-modal {
   background-color: #333;
