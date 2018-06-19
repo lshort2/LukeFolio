@@ -21,8 +21,6 @@
   background-image: url(assets/img/background_images/cool-space-bg.jpg);
   background-size: cover;
   height: 120vh;
-  /* background-image: url(assets/img/background_images/darkness.png); */
-  /* transform: translateZ(-1px) scale(2); */
   transform: translateZ(-4px) scale(5);
 }
 
@@ -34,7 +32,6 @@ html,body {
 
 body {
   background-image: url(assets/img/background_images/cool-space-bg-sliver.jpg);
-  /* background-image: url(assets/img/background_images/darkness.png); */
   /* background-color: #030303; */
   background-position: top;
   /* background-size: cover; */
