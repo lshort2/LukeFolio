@@ -5,10 +5,6 @@ angular.module('myApp.github', ['ngRoute'])
 .config(['$routeProvider', function($routeProvider) {
   $routeProvider.when('/github', {
     templateUrl: 'view_github/github.html',
-    controller: 'ViewGithubCtrl'
+    controller: 'ScrollToTopCtrl'
   });
 }])
-
-.controller('ViewGithubCtrl', [function() {
-  window.scrollTo(0, 0);
-}]);

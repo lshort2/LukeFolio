@@ -22,6 +22,11 @@ config(['$locationProvider', '$routeProvider', function($locationProvider, $rout
   // $locationProvider.hashPrefix('!');
   // $locationProvider.html5Mode(true);
   $routeProvider.otherwise({redirectTo: '/home'});
+}])
+.controller('ScrollToTopCtrl', [function() {
+  $(document).ready(function (){
+    $('.parallax').scrollTop(0,0);
+  });
 }]);
 
 //===================================================================

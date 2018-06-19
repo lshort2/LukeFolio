@@ -5,10 +5,6 @@ angular.module('myApp.testbest', ['ngRoute'])
 .config(['$routeProvider', function($routeProvider) {
   $routeProvider.when('/testbest', {
     templateUrl: 'view_testbest/testbest.html',
-    controller: 'ViewTestbestCtrl'
+    controller: 'ScrollToTopCtrl'
   });
 }])
-
-.controller('ViewTestbestCtrl', [function() {
-  window.scrollTo(0, 0);
-}]);
