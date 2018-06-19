@@ -214,8 +214,8 @@ body {
 
 .taskbar-icon.active {
   /* border: 2px solid rgba(22, 22, 22, .6); */
-  box-shadow: 1px 1px 1px 1px;
-  box-shadow: -2px 2px 3px 1px rgba(255, 255, 255, 0.2);
+  /* box-shadow: 1px 1px 1px 1px; */
+  box-shadow: -2px 2px 3px 1px rgba(255, 255, 255, 0.25);
   transform: scale(1.1);
 }
 
