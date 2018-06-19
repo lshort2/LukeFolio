@@ -30,29 +30,6 @@ config(['$locationProvider', '$routeProvider', function($locationProvider, $rout
 }]);
 
 //===================================================================
-// Viewport width calculations
-//===================================================================
-function getWidth() {
-  return Math.max(
-    document.body.scrollWidth,
-    document.documentElement.scrollWidth,
-    document.body.offsetWidth,
-    document.documentElement.offsetWidth,
-    document.documentElement.clientWidth
-  );
-}
-
-function getHeight() {
-  return Math.max(
-    document.body.scrollHeight,
-    document.documentElement.scrollHeight,
-    document.body.offsetHeight,
-    document.documentElement.offsetHeight,
-    document.documentElement.clientHeight
-  );
-}
-
-//===================================================================
 // Animations after DOM ready
 //===================================================================
 
@@ -174,24 +151,19 @@ document.addEventListener('custombox:overlay:close', function() {
 });
 
 $(document).ready(function() {
-  let h = $(window).height(); // getHeight();
-  let w = $(window).width(); // getWidth();
-  console.log('w: ', w);
-  console.log('h: ', h);
-  // bombDrop = 300; //27% - 30% height
-  let temp = h * .4;
+  let h = $(window).height();
+  let w = $(window).width();
+
+  let temp = h * .4 + 50;
   bombDrop = temp.toFixed(0);
-  console.log('bombDrop: ', bombDrop);
-  // yWingDist1 = -1 * 600; // 55% of width
+
   temp = w * .5;
   temp = temp.toFixed(0) - 100;
   yWingDist1 = -1 * temp;
-  console.log('yWingDist1: ', yWingDist1);
-  // yWingDist2 = -1 * 2100; // 117% of width
+
   temp = w * 1.17;
   temp = temp.toFixed(0);
   yWingDist2 = -1 * temp;
-  console.log('yWingDist2: ', yWingDist2);
   bomb.css('right',  (-1 * yWingDist1) + 'px');
   setTimeout(function(){
     console.log('terrible terrible hack, use promises or callbacks');
