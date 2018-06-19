@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" ng-app="myApp" class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>LukeFolio</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/normalize.css">
+  <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/main.css">
+  <link rel="stylesheet" href="bower_components/custombox/dist/custombox.min.css">
+  <link rel="stylesheet" href="bower_components/foundation-sites/dist/css/foundation.min.css">
+  <link rel="stylesheet" href="tooltips.css">
+  <link rel="stylesheet" href="fontawesome/fa-svg-with-js.css">
+  <link rel="stylesheet" href="app.css">
+  <link href="https://fonts.googleapis.com/css?family=Gothic+A1|Roboto" rel="stylesheet">
+
+  <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
+  <script src="bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="bower_components/custombox/dist/custombox.min.js"></script>
+  <script src="bower_components/custombox/dist/custombox.legacy.min.js"></script>
+  <script defer src="bower_components/move-js/move.min.js"></script>
+  <!-- <script src="../api.js" async></script> -->
+
+
+
+  <script defer src="fontawesome/fontawesome.min.js"></script>
+  <script defer src="fontawesome/fa-solid.min.js"></script>
+</head>
+<body>
+  <div class="background-element">
+    <div class="parallax">
+      <div class="parallax__group">
+        <div class="parallax__layer parallax__layer--back">
+        </div>
+        <div class="parallax__layer parallax__layer--base">
+          <div class="main-content" ng-view></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <nav class="taskbar" role="navigation">
+    <div class="taskbar-icon tooltip-left" data-tooltip="TestBest"><a href="#/testbest"><img src="nav_components/img/testbest-icon.png" alt="TestBest"/></a></div>
+    <div class="taskbar-icon tooltip-left" data-tooltip="Deptartment of Science Education"><a href="#/dept-sci-ed"><img src="nav_components/img/dept-sci-ed-icon.png" alt="Dept Sci Ed"/></a></div>
+    <div class="taskbar-icon tooltip-left" data-tooltip="Tau Beta Pi"><a href="#/tbp"><img src="nav_components/img/tau-beta-pi-icon.png" alt="TBP"/></a></div>
+    <div class="taskbar-icon tooltip-left" data-tooltip="Contact"><a href="#/contact"><img src="nav_components/img/contact-icon.png" alt="Contact"/></a></div>
+    <div class="taskbar-icon tooltip-left" data-tooltip="GitHub"><a href="#/github"><img src="nav_components/img/github-icon.png" alt="GitHub"/></a></div>
+    <div class="taskbar-icon tooltip-left" data-tooltip="LinkedIn"><a href="#/linkedin"><img src="nav_components/img/linkedin-icon.png" alt="LinkedIn"/></a></div>
+    <div class="taskbar-icon tooltip-left" data-tooltip="Site info"><a href="#/about-site"><img src="nav_components/img/site-info-icon.png" alt="Info Icon (about site)"/></a></div>
+    <div class="taskbar-icon tooltip-left" data-tooltip="About me"><a href="#/about-me"><img src="nav_components/img/about-me.png" alt="About me"/></a></div>
+  </nav>
+  <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+  <![endif]-->
+
+  <!--
+    <div class="main-content" ng-view></div>
+  -->
+
+  <!--
+    COMMENTED OUT from original seed app
+    <div>Angular seed app: v<span app-version></span></div>
+  -->
+
+  <!-- Welcome Modal -->
+  <div id="welcome_modal" class="welcome-modal">
+    <a href="javascript:void(0);" onclick="Custombox.modal.close();" class="welcome-close"><i class="fas fa-times"></i></a>
+    <div class="welcome-heading">Welcome to LukeFolio</div>
+    <div class="welcome-description">
+      This is a website I hacked together in my free time to showcase some of the more recent involvements in my life.
+    </div>
+    <div class="welcome-description">
+      Also, I'll be honest... I wanted an excuse to gather some gifs from GIPHY's API. ;)
+    </div>
+    <div class="welcome-description">
+      Cheers!
+    </div>
+    <div class="welcome-description">
+      Luke Short
+    </div>
+  </div>
+
+  <!-- Y Wing -->
+  <img id="y_wing_bomber" class="y-wing-bomber" src="ship_components/img/animated-y-wing.gif"/>
+  <img id="y_wing_bomb" class="y-wing-bomb" src="ship_components/img/fireball.gif"/>
+  <img id="after_bomb" class="after-bomb" src="ship_components/img/explosion.gif"/>
+
+  <!-- In production use:
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
+  -->
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/angular-route/angular-route.js"></script>
+  <script src="app.js"></script>
+  <script src="view_about_me/about-me.js"></script>
+  <script src="view_about_site/aboute-site.js"></script>
+  <script src="view_contact/contact.js"></script>
+  <script src="view_dept_sci_ed/dept-sci-ed.js"></script>
+  <script src="view_github/github.js"></script>
+  <script src="view_home/home.js"></script>
+  <script src="view_linkedin/linkedin.js"></script>
+  <script src="view_tbp/tbp.js"></script>
+  <script src="view_testbest/testbest.js"></script>
+  <script src="components/version/version.js"></script>
+  <script src="components/version/version-directive.js"></script>
+  <script src="components/version/interpolate-filter.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.0.2/js/modernizr.js"></script>
+  <script src="bower_components/foundation-sites/dist/js/foundation.min.js"></script>
+</body>
+</html>
